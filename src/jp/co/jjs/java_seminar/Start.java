@@ -38,8 +38,7 @@ public class Start extends HttpServlet {
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
      *      response)
      */
-    protected void doPost(HttpServletRequest request,
-            HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession(true);
@@ -54,8 +53,7 @@ public class Start extends HttpServlet {
         session.setAttribute("mail", mail);
         session.setAttribute("password", password);
 
-        RequestDispatcher dispatcher = request
-                .getRequestDispatcher("WEB-INF/jsp/kakunin.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/kakunin.jsp");
         dispatcher.forward(request, response);
     }
 
