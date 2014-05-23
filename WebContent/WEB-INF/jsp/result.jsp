@@ -9,12 +9,10 @@
 <body>
     <h1>ご協力ありがとうございます</h1>
     <h2>以下の内容で登録します</h2>
-    名前:${sessionScope['name']}
-    <br> ニックネーム:${sessionScope['nickname']}
-    <br> メールアドレス:${sessionScope['mail']}
-    <br> パスワード:${sessionScope['password']}
-    <br>
+    名前:${sessionScope['name']}<br>
+    ニックネーム:${sessionScope['nickname']}<br>
+    メールアドレス:${sessionScope['mail']}<br>
+    パスワード:${sessionScope['password']}<br>
     <input type="button" value="TOP" onclick=location.href='Inquiry'>
-
 </body>
 </html>

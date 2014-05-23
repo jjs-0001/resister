@@ -9,11 +9,11 @@
 <body>
     <h1>以下の内容で登録してもよろしいですか？</h1>
     <form method="post" action="End">
-    名前:${sessionScope['name']}<br>
-    ニックネーム:${sessionScope['nickname']}<br>
-    メールアドレス:${sessionScope['mail']}<br>
-    パスワード:${sessionScope['password']}<br>
-    <input type="submit" value="OK"><br>
+        名前:${sessionScope['name']}<br>
+        ニックネーム:${sessionScope['nickname']}<br>
+        メールアドレス:${sessionScope['mail']}<br>
+        パスワード:${sessionScope['password']}<br>
+        <input type="submit" value="OK"><br>
     </form>
     <input type="button" value="キャンセル" onclick=location.href='Inquiry'>
 
